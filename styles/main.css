@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid steelblue;
+    box-shadow: 5px 5px 10px 10px grey;
+
+}
+/* Nav Styling */
+
+#nav_menu ul {
+    list-style: none;
+    display: flex;
+    background-color: steelblue;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+    width:20%;
+}
+#nav_menu ul li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 1em 0;
+}
+#nav_menu ul li a:hover {
+    background-color: lightsteelblue;
+    color: yellow;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    width: 20%;
+    z-index: 1;
+}
+#nav_menu ul ul li {
+    float: none;
+    width: 100%
+}
+#nav_menu ul ul li a {
+    text-align: left;
+    padding-left: 0.25em;
+}
+#nav_menu ul li:hover > ul{
+    display:block;
+}
+.active {
+    color: black;
+}
+main {
+    clear: both;
+}
+header {
+    background-image: linear-gradient(steelblue, white);
+    padding: 1.5em 0;
+}
+.clearfix::after {
+    content: "";
+    clear:both;
+    display: table;
+}
+header h2{
+    font-size: 250%;
+    color: steelblue;
+    margin: 0.5em 0;
+    font-style: italic;
+    text-shadow: 2px 2px 8px steelblue;
+}
+header img {
+    float: left;
+    margin-right: 2em;
+}
+header h3 {
+    font-size: 150%;
+    margin: 0.5em 0;
+}
+h3 {
+    padding: 0 1em;
+}
+h1 {
+    margin-top: 0.5em;
+    font-size: 175%;
+    padding: 0 1em;
+}
+
+p {
+    margin: 1em 0;
+    padding: 0 1em;
+
+}
+/* Pseudoclasses for section */
+section a:link {
+    color: maroon;
+}
+section a:visited {
+    color: maroon;
+}
+section a:hover {
+    color: steelblue;
+}
+section a:active {
+    color: steelblue;
+}
+section h2 {
+    margin: .5em 0;
+    padding: 0 1em;
+}
+section {
+    float: right;
+    width: 60%;
+}
+/* Pseudo classes for aside*/
+aside {
+    float: left;
+    width: 40%;
+}
+aside a:link {
+    color: steelblue;
+}
+aside a:visited {
+    color: steelblue;
+}
+aside a:hover {
+    color: maroon;
+}
+aside a:active {
+    color: maroon;
+}
+aside a {
+    font-weight: bold;
+}
+aside h2{
+    padding: 0 1em;
+    margin-top: 0.5em;
+
+}
+aside ul {
+    margin-top: 1em;
+    line-height: 25px;
+    margin-left: 3em;
+    padding: 0 1em;
+}
+blockquote {
+    margin: 0 2em;
+    padding: 0.5em;
+    font-size: 90%;
+    font-style: italic;
+    background-color: tan;
+    opacity: 0.8;
+    border-left: 5px solid maroon;
+}
+footer {
+    margin-top: 1.5em;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    font-size: 80%;
+    font-variant: small-caps;
+    border-top: 1px solid steelblue;
+    padding: 1.5em 0;
+    clear: both;
+}
